@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css"> 
+	<link rel="stylesheet" href="basics.css"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">  
+
+	<title>Sarah's Painting Gallery</title>
+
+<!-- CDN link to SlickNav CSS  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+ 
+<!-- Link to your custom stylesheet -->
+<link rel="stylesheet" href="styles.css">
+ 
+<!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 
+<!-- CDN link to SlickNav jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+	  $("#nav").slicknav({
+		  prependTo: "#mobilemenu"
+	  });
+  });
+</script>
+
+</head> 
+<body>
+
+	<div class="container">
+
+		<div class="header">
+
+
+			<div class="flexcontainer1">
+				
+				<div style="
+				font-size: 1vh;
+				color: white;
+				font-family: 'Times New Roman', Times, serif;
+				">
+					<ul>
+
+						<li> 
+							<i class="fab fa-battle-net"></i>
+						</li>
+						<li>
+							<h1>Sarah's Painting Gallery</h1>
+							<h2>Design by Cher Xiong</h2>
+						</li>
+					</ul>
+					
+
+				</div>
+	
+
+			</div>
+
+			
+
+			<div class="flexcontainer">
+
+				<div>
+					<ul>
+						<nav id="mobilemenu"></nav>
+					</ul>
+					<ul id="nav">
+						
+						<li><a class="active" href="index.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="#">Artworks</a>
+							<ul>
+
+								<li><a href="Martha.html">Martha</a><br></li>
+								<li><a href="Georgina.html">Georgina</a><br></li>
+							</ul>
+						</li>
+						<li><a href="#">Artworks II</a>
+							<ul>
+								<li><a href="Marietta.html">Marietta</a><br></li>
+								<li><a href="Allie.html">Allie</a><br></li>
+							</ul>
+						</li>
+						
+					</ul>
+					
+
+				</div>
+	
+
+			</div>
+			
+		</div>
+
+
+		<div class="main">
+
+
+			<div class="maincontainer">
+
+				<div>
+					<ul>
+
+						<li>
+							<i class="fas fa-angle-double-right" style="color: white;"></i>
+							<h1>Unique</h1>
+							<h6 style="line-height: 1.5em;">Artworks are<br>made personally!</h6>
+							<a href="#">Learn More</a>
+							
+						
+						</li>
+						
+						<li>
+							<i class="fas fa-atom"></i>
+							<h1>Personal</h1>
+							<h6 style="line-height: 1.5em;">Everything is made<br>from individuals!</h6>
+							<a href="Design Specs.pdf">Design Specs</a>
+							
+						
+						</li>
+						<li>
+							<i class="fas fa-angle-double-left" style="color: white;"></i>
+							<h1>Trendy</h1>
+							<h6 style="line-height: 1.5em;">Personal paintings <br>from trending artists!</h6>
+							<a href="#">Learn More</a>
+							
+						
+						</li>
+						
+					</ul>
+					
+
+				</div>
+	
+
+			</div>
+
+
+		</div>
+
+		<div class="footer">
+
+
+			<div class="formcontainer">
+
+				<div>
+					<form method="get">
+						<label style="font-size: 1.4vw;"><b><u>Subscribe below for future updates & paintings!</u></b></label><br>
+						<label><b>Full name:</b></label>
+						<input type="text" id="fname" name="fname" placeholder="Emily Denison" autocomplete="off" required="">
+						<label><b><br>Email address:</b></label><br>
+						<input type="email" id="email" name="email" placeholder="emildns@gmail.com" autocomplete="off" required="">
+						<br>
+						<input type="submit" value="Submit">
+					
+					</form>
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+	</body>
+
+
+</html>
