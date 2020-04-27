@@ -1,0 +1,26 @@
+.container > div {
+    display: flex;
+    font-size: 2em;
+    color: #000000;
+}
+
+html, body {
+  background-color: #ffffff;
+  margin: 2px;
+  height: 99.3%;
+  font-family: 'Lacquer' ;
+}
+
+.container > div:nth-child(1n) {
+  background-color: #98dac1;	
+}
+
+.container > div:nth-child(3n) {
+  background-color: #98dac1;
+}
+
+.container > div:nth-child(2n) {
+      background-color: #50ac9f;
+}
+
+ 

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css"> 
+	<link rel="stylesheet" href="basics.css"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">  
+
+	<title>Marietta's Paintings</title>
+
+<!-- CDN link to SlickNav CSS  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+ 
+<!-- Link to your custom stylesheet -->
+<link rel="stylesheet" href="styles.css">
+ 
+<!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 
+<!-- CDN link to SlickNav jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+	  $("#nav").slicknav({
+		  prependTo: "#mobilemenu"
+	  });
+  });
+</script>
+
+</head> 
+<body>
+
+	<div class="container">
+
+		<div class="header">
+
+
+			<div class="flexcontainer1">
+				
+				<div style="
+				font-size: 1vh;
+				color: white;
+				font-family: 'Times New Roman', Times, serif;
+				">
+					<ul>
+
+						<li> 
+							<i class="fab fa-battle-net"></i>
+						</li>
+						<li>
+							<h1>Marietta's Paintings</h1>
+						</li>
+					</ul>
+					
+
+				</div>
+	
+
+			</div>
+
+			
+
+			<div class="flexcontainer">
+
+				<div>
+					<ul>
+						<nav id="mobilemenu"></nav>
+					</ul>
+					<ul id="nav">
+						
+						<li><a href="index.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+						<li><a href="#">Artworks I</a>
+							<ul style="z-index: 1;">
+
+								<li><a href="Martha.html">Martha</a><br></li>
+								<li><a href="Georgina.html">Georgina</a><br></li>
+							</ul>
+						</li>
+						<li><a  class ="active" href="#">Artworks II</a>
+							<ul style="z-index: 1;">
+								<li><a  class ="active" href="Marietta.html">Marietta</a><br></li>
+								<li><a href="Allie.html">Allie</a><br></li>
+							</ul>
+						</li>
+						
+					</ul>
+					
+
+				</div>
+	
+
+			</div>
+			
+		</div>
+
+
+		<div class="main">
+
+            <img height="300px" alt="Hmong Dress" width="150px" src="Painting_16.jpg">
+            <img height="300px" alt="Green Dress" width="150px" src="Painting_17.jpg">
+            <img height="300px" alt="Blue Blossoms" width="150px" src="Painting_18.jpg">
+            <img height="300px" alt="Midnight Sky" width="150px" src="Painting_19.jpg">
+            <img height="300px" alt="Crstals" width="150px" src="Painting_20.jpg">
+            <img height="300px" alt="Mushroom" width="150px" src="Painting_21.jpg">
+            <img height="300px" alt="Pot of Flowers" width="150px" src="Painting_22.jpg">
+            <img height="300px" alt="Autumn Clouds" width="150px" src="Painting_23.jpg">
+
+		</div>
+
+        <div style="
+        align-content: center;
+        justify-content: center;
+        padding-top: 24vh;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        "
+        >
+            Last Updated on
+			<script>
+				var days = new Array(8);
+				days[1] = "Sunday";
+				days[2] = "Monday";
+				days[3] = "Tuesday";
+				days[4] = "Wednesday";
+				days[5] = "Thursday";
+				days[6] = "Friday";
+				days[7] = "Saturday";
+				var months = new Array(13);
+				months[1] = "January";
+				months[2] = "February";
+				months[3] = "March";
+				months[4] = "April";
+				months[5] = "May";
+				months[6] = "June";
+				months[7] = "July";
+				months[8] = "August";
+				months[9] = "September";
+				months[10] = "October";
+				months[11] = "November";
+				months[12] = "December";
+				var dateObj = new Date(document.lastModified)
+				var wday = days[dateObj.getDay() + 1]
+				var lmonth = months[dateObj.getMonth() + 1]
+				var date = dateObj.getDate()
+				var fyear = dateObj.getYear()
+				if (fyear < 2000) fyear = fyear + 1900
+				document.write("" + wday + ", " + lmonth + " " + date + ", " + fyear)
+				// End -->
+			</script>
+
+           
+	</div>
+
+	</body>
+
+
+</html>
